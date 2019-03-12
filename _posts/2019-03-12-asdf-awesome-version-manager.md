@@ -2,7 +2,7 @@
 layout: post
 title:  "Asdf - awesome version manager for multiple runtime envirotments"
 date:   2019-02-12 21:13:26
-categories: asdf ruby golang elixir
+categories: tools
 tags: none
 image: /assets/article_images/2019-02-13-asdf/haven1-i_see_stars-01-1024x768.png
 ---

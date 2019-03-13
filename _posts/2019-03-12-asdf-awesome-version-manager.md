@@ -13,7 +13,7 @@ Real world programming you have many projects with different programming languag
 
 [**Asdf**](https://asdf-vm.com/) - is version manager for multiple runtime envirotments.
 
-CLI tool supports a lot of plugins for installing different versions of programming languages, tools and databases. It also supports existing config files such like ```.node-version```, ```.nvmrc```, ```.ruby-version```. Just append ```legacy_version_file = yes``` to ```~/.asdfrc``` file. Automatically switches runtime versions and many many other cool things.
+CLI tool supports a lot of plugins for installing different versions of programming languages, tools and databases. It also supports existing config files such as ```.node-version```, ```.nvmrc```, ```.ruby-version```. Just append ```legacy_version_file = yes``` to ```~/.asdfrc``` file. Automatically switches runtime versions and many many other cool things.
 You can see full list of plugins [here](https://asdf-vm.com/#/plugins-all?id=plugin-list).
 
 ### Setup

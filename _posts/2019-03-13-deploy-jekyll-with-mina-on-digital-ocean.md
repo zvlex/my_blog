@@ -7,7 +7,8 @@ tags: none
 image: /assets/article_images/2019-02-13-asdf/haven1-i_see_stars-01-1024x768.png
 ---
 
-Let's deploy your Jekyll blog on DigitalOcean or any other dedicated server.
+Let's deploy [Jekyll](http://jekyllrb.com) blog on [DigitalOcean](https://m.do.co/c/51b036646dd1) or any other dedicated server.
+> My favorite distro is [Fedora](https://getfedora.org/), so all example will work only on Fedora/CentOS.
 
 ---
 ### Mina
@@ -69,7 +70,7 @@ end
 
 > Don't forget add your public ssh key to github.com
 
-Now setup project structure and deploy:  
+Now setup project structure and deploy:
 {% highlight bash %}
 # Creates structure on server
 $ mina setup
@@ -81,3 +82,30 @@ $ mina deploy
 ---
 
 ### Nginx
+
+Create config file ```/etc/nginx/conf.d/my_blog.conf``` and set blog root:
+
+{% highlight bash %}
+server {
+    listen       PORT;
+    server_name  HOSTNAME;
+
+    # Set root to your blog current _site version
+    root         /var/www/my_blog/current/_site;
+
+
+    location / {
+    }
+
+    error_page 404 /404.html;
+        location = /40x.html {
+    }
+
+    error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+    }
+}
+
+{% endhighlight %}
+
+Then restart Nginx ```systemclt restart nginx```

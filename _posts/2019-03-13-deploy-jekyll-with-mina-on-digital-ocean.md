@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Deploy Jekyll with Mina on DigitalOcean"
-date:   2019-02-13 13:51:26
+date:   2019-03-13 13:51:26
 categories: tools deploy
-tags: none
+tags: fedora linux deploy mina digital-ocean
 image: /assets/article_images/2019-02-13-asdf/haven1-i_see_stars-01-1024x768.png
 ---
 
